@@ -6,6 +6,6 @@ services:
     ports:
       - "8080:8080"
     container_name: golang
-    command: sh -c "cd app && bee run"
+    command: sh -c "cd app && bee run -downdoc=true -gendoc=true"
     volumes:
       - ./app:/go/src/github.com/app
